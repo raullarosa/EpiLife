@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E6FD40019C6C1B88D1160B4 /* Pods_EpiLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DF507DDFCCC0BEF8EC7838 /* Pods_EpiLife.framework */; };
 		C4EAF20C1E56748300FC7C71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAF20B1E56748300FC7C71 /* AppDelegate.swift */; };
 		C4EAF20E1E56748300FC7C71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAF20D1E56748300FC7C71 /* ViewController.swift */; };
 		C4EAF2111E56748400FC7C71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EAF20F1E56748400FC7C71 /* Main.storyboard */; };
 		C4EAF2131E56748400FC7C71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4EAF2121E56748400FC7C71 /* Assets.xcassets */; };
 		C4EAF2161E56748400FC7C71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EAF2141E56748400FC7C71 /* LaunchScreen.storyboard */; };
+		C4EAF2201E567FFF00FC7C71 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4EAF21F1E567FFF00FC7C71 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26CB7AB599B4B9285259D17E /* Pods-EpiLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpiLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-EpiLife/Pods-EpiLife.release.xcconfig"; sourceTree = "<group>"; };
+		2B51AD078ADCF4AB51388ED3 /* Pods-EpiLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpiLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EpiLife/Pods-EpiLife.debug.xcconfig"; sourceTree = "<group>"; };
+		72DF507DDFCCC0BEF8EC7838 /* Pods_EpiLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EpiLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EAF2081E56748300FC7C71 /* EpiLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpiLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EAF20B1E56748300FC7C71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4EAF20D1E56748300FC7C71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		C4EAF2121E56748400FC7C71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4EAF2151E56748400FC7C71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4EAF2171E56748400FC7C71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4EAF21F1E567FFF00FC7C71 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E6FD40019C6C1B88D1160B4 /* Pods_EpiLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		101EBF18B28BFDEFBD5B1154 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B51AD078ADCF4AB51388ED3 /* Pods-EpiLife.debug.xcconfig */,
+				26CB7AB599B4B9285259D17E /* Pods-EpiLife.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2253E538778C0B82DF37EDBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72DF507DDFCCC0BEF8EC7838 /* Pods_EpiLife.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C4EAF1FF1E56748300FC7C71 = {
 			isa = PBXGroup;
 			children = (
 				C4EAF20A1E56748300FC7C71 /* EpiLife */,
 				C4EAF2091E56748300FC7C71 /* Products */,
+				101EBF18B28BFDEFBD5B1154 /* Pods */,
+				2253E538778C0B82DF37EDBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				C4EAF2121E56748400FC7C71 /* Assets.xcassets */,
 				C4EAF2141E56748400FC7C71 /* LaunchScreen.storyboard */,
 				C4EAF2171E56748400FC7C71 /* Info.plist */,
+				C4EAF21F1E567FFF00FC7C71 /* GoogleService-Info.plist */,
 			);
 			path = EpiLife;
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4EAF21A1E56748400FC7C71 /* Build configuration list for PBXNativeTarget "EpiLife" */;
 			buildPhases = (
+				93C269FBCB67F1828CA127FC /* [CP] Check Pods Manifest.lock */,
 				C4EAF2041E56748300FC7C71 /* Sources */,
 				C4EAF2051E56748300FC7C71 /* Frameworks */,
 				C4EAF2061E56748300FC7C71 /* Resources */,
+				60DA65EDCF7518A2A20A0CB5 /* [CP] Embed Pods Frameworks */,
+				79AAF690BC0A3AC83FCB07C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4EAF2161E56748400FC7C71 /* LaunchScreen.storyboard in Resources */,
+				C4EAF2201E567FFF00FC7C71 /* GoogleService-Info.plist in Resources */,
 				C4EAF2131E56748400FC7C71 /* Assets.xcassets in Resources */,
 				C4EAF2111E56748400FC7C71 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60DA65EDCF7518A2A20A0CB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpiLife/Pods-EpiLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79AAF690BC0A3AC83FCB07C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpiLife/Pods-EpiLife-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93C269FBCB67F1828CA127FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4EAF2041E56748300FC7C71 /* Sources */ = {
@@ -258,6 +337,7 @@
 		};
 		C4EAF21B1E56748400FC7C71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B51AD078ADCF4AB51388ED3 /* Pods-EpiLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EpiLife/Info.plist;
@@ -270,6 +350,7 @@
 		};
 		C4EAF21C1E56748400FC7C71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26CB7AB599B4B9285259D17E /* Pods-EpiLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EpiLife/Info.plist;
@@ -299,6 +380,7 @@
 				C4EAF21C1E56748400FC7C71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
