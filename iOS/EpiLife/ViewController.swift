@@ -8,7 +8,7 @@
 
 import UIKit
 
-private class ViewController: UIViewController, NRFManager {
+private class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
