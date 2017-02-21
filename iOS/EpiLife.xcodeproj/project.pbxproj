@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E6FD40019C6C1B88D1160B4 /* Pods_EpiLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DF507DDFCCC0BEF8EC7838 /* Pods_EpiLife.framework */; };
+		C405FAB31E5CDCDF00AD06B9 /* NRFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C405FAB21E5CDCDF00AD06B9 /* NRFManager.swift */; };
 		C4EAF20C1E56748300FC7C71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAF20B1E56748300FC7C71 /* AppDelegate.swift */; };
 		C4EAF20E1E56748300FC7C71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAF20D1E56748300FC7C71 /* ViewController.swift */; };
 		C4EAF2111E56748400FC7C71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EAF20F1E56748400FC7C71 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		26CB7AB599B4B9285259D17E /* Pods-EpiLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpiLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-EpiLife/Pods-EpiLife.release.xcconfig"; sourceTree = "<group>"; };
 		2B51AD078ADCF4AB51388ED3 /* Pods-EpiLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpiLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EpiLife/Pods-EpiLife.debug.xcconfig"; sourceTree = "<group>"; };
 		72DF507DDFCCC0BEF8EC7838 /* Pods_EpiLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EpiLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C405FAB21E5CDCDF00AD06B9 /* NRFManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRFManager.swift; sourceTree = "<group>"; };
 		C4EAF2081E56748300FC7C71 /* EpiLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpiLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EAF20B1E56748300FC7C71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4EAF20D1E56748300FC7C71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		C4EAF20A1E56748300FC7C71 /* EpiLife */ = {
 			isa = PBXGroup;
 			children = (
+				C405FAB21E5CDCDF00AD06B9 /* NRFManager.swift */,
 				C4EAF20B1E56748300FC7C71 /* AppDelegate.swift */,
 				C4EAF20D1E56748300FC7C71 /* ViewController.swift */,
 				C4EAF20F1E56748400FC7C71 /* Main.storyboard */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4EAF20E1E56748300FC7C71 /* ViewController.swift in Sources */,
+				C405FAB31E5CDCDF00AD06B9 /* NRFManager.swift in Sources */,
 				C4EAF20C1E56748300FC7C71 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
