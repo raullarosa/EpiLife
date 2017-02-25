@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EpiLife" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,80 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Iu8-zi-EZG">
+                                <rect key="frame" x="16" y="28" width="343" height="457"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eU3-tv-FI0">
+                                <rect key="frame" x="158" y="493" width="59" height="30"/>
+                                <state key="normal" title="Connect"/>
+                                <connections>
+                                    <action selector="connectButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hRE-ZE-Ren"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3n-mY-Fja">
+                                <rect key="frame" x="148" y="524" width="78" height="30"/>
+                                <state key="normal" title="Disconnect"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tP-px-jTm">
+                                <rect key="frame" x="151" y="562" width="72" height="30"/>
+                                <state key="normal" title="Send Data"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owB-Is-mVd">
+                                <rect key="frame" x="170" y="600" width="35" height="30"/>
+                                <state key="normal" title="Scan"/>
+                                <connections>
+                                    <action selector="scanButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1sP-16-pbm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connected to:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AZ-fo-WL8">
+                                <rect key="frame" x="69" y="638" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="none" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGI-bS-Rfy">
+                                <rect key="frame" x="204" y="638" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Iu8-zi-EZG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="82j-UQ-P6B"/>
+                            <constraint firstItem="S3n-mY-Fja" firstAttribute="top" secondItem="eU3-tv-FI0" secondAttribute="bottom" constant="1" id="Avk-k6-lmm"/>
+                            <constraint firstItem="Iu8-zi-EZG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="DD4-3B-N7D"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5AZ-fo-WL8" secondAttribute="bottom" constant="8" symbolic="YES" id="DWP-EQ-5cP"/>
+                            <constraint firstItem="SGI-bS-Rfy" firstAttribute="top" secondItem="owB-Is-mVd" secondAttribute="bottom" constant="8" symbolic="YES" id="Ddx-g6-oAP"/>
+                            <constraint firstItem="Iu8-zi-EZG" firstAttribute="centerX" secondItem="eU3-tv-FI0" secondAttribute="centerX" id="LtT-ym-Nf0"/>
+                            <constraint firstItem="9tP-px-jTm" firstAttribute="centerX" secondItem="owB-Is-mVd" secondAttribute="centerX" id="Zl2-LQ-PVN"/>
+                            <constraint firstItem="owB-Is-mVd" firstAttribute="top" secondItem="9tP-px-jTm" secondAttribute="bottom" constant="8" symbolic="YES" id="dVT-E5-hVn"/>
+                            <constraint firstItem="5AZ-fo-WL8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="53" id="dql-bs-Q6A"/>
+                            <constraint firstItem="eU3-tv-FI0" firstAttribute="centerX" secondItem="S3n-mY-Fja" secondAttribute="centerX" id="dsl-Ka-IDj"/>
+                            <constraint firstItem="Iu8-zi-EZG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="ev9-pU-0Sj"/>
+                            <constraint firstItem="SGI-bS-Rfy" firstAttribute="leading" secondItem="5AZ-fo-WL8" secondAttribute="trailing" constant="26" id="fQd-6V-XAH"/>
+                            <constraint firstItem="eU3-tv-FI0" firstAttribute="top" secondItem="Iu8-zi-EZG" secondAttribute="bottom" constant="8" symbolic="YES" id="ghv-bj-3hm"/>
+                            <constraint firstItem="5AZ-fo-WL8" firstAttribute="baseline" secondItem="SGI-bS-Rfy" secondAttribute="baseline" id="j6M-LP-ggq"/>
+                            <constraint firstItem="S3n-mY-Fja" firstAttribute="centerX" secondItem="9tP-px-jTm" secondAttribute="centerX" id="p1n-hF-O24"/>
+                            <constraint firstItem="9tP-px-jTm" firstAttribute="top" secondItem="S3n-mY-Fja" secondAttribute="bottom" constant="8" symbolic="YES" id="stf-cQ-RyL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="connectButton" destination="eU3-tv-FI0" id="Zgg-7r-pkS"/>
+                        <outlet property="currentPeripheralName" destination="SGI-bS-Rfy" id="8Qj-iz-w6k"/>
+                        <outlet property="disconnectButton" destination="S3n-mY-Fja" id="pSd-5j-w5W"/>
+                        <outlet property="feedbackView" destination="Iu8-zi-EZG" id="DIf-q2-kxC"/>
+                        <outlet property="scanButton" destination="owB-Is-mVd" id="Uac-iZ-eGl"/>
+                        <outlet property="sendButton" destination="9tP-px-jTm" id="7Ra-Ku-Dye"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-212" y="62.518740629685162"/>
         </scene>
     </scenes>
 </document>

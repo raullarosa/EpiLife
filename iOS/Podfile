@@ -6,9 +6,9 @@ target 'EpiLife' do
   use_frameworks!
 
 # Pods for EpiLife
-pod 'Firebase/Database'
-pod 'Firebase/Auth'
-pod 'FirebaseUI'
-pod 'Firebase/Core'
+#pod 'Firebase/Database'
+#pod 'Firebase/Auth'
+#pod 'FirebaseUI'
+#pod 'Firebase/Core'
 
 end
