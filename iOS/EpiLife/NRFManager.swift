@@ -35,8 +35,9 @@ open class NRFManager:NSObject, CBCentralManagerDelegate, UARTPeripheralDelegate
     
     
     fileprivate var arduinoToConnect: String?
+    
     //Private Properties
-    fileprivate var bluetoothManager:CBCentralManager!
+    var bluetoothManager: CBCentralManager!
     fileprivate var currentPeripheral: UARTPeripheral? {
         didSet {
             if let p = currentPeripheral {
