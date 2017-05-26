@@ -1,6 +1,8 @@
 # EpiLife
 Designed a mobile interface in Sketch for an app that will transfer data from the wearable and alert the user and their relatives of incoming seizures due to epilepsy
 
+![](https://github.com/raullarosa/EpiLife/blob/master/EpiLifeDesign.gif)
+
 ## Project Design
 
 ### Wearable (Arduino Microcontroller)
